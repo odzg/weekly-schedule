@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "version": 1,
+    "timezone": "Asia/Jerusalem",
+    "generatedAt": "2025-07-30T23:15:00+03:00"
+  },
+  "week": [
+    {
+      "day": "Monday",
+      "date": "2025-08-04",
+      "blocks": [
+        { "start": "06:45", "end": "07:00", "title": "Wake‑up & hygiene",         "category": "self-care" },
+        { "start": "07:00", "end": "07:30", "title": "Morning meditation",        "category": "wellbeing" },
+        { "start": "07:30", "end": "08:15", "title": "Breakfast + journaling",   "category": "meal" },
+        { "start": "08:15", "end": "08:30", "title": "Supplements & meds",        "category": "health" },
+        { "start": "08:30", "end": "12:30", "title": "Deep work (coding)",        "category": "work" },
+        { "start": "12:30", "end": "13:15", "title": "Lunch",                    "category": "meal" },
+        { "start": "13:15", "end": "14:00", "title": "Midday walk",              "category": "exercise" },
+        { "start": "14:00", "end": "18:00", "title": "Collab work / meetings",   "category": "work" },
+        { "start": "18:15", "end": "19:05", "title": "Weights + treadmill",      "category": "exercise" },
+        { "start": "19:15", "end": "20:00", "title": "Dinner",                   "category": "meal" },
+        { "start": "20:00", "end": "21:30", "title": "Personal project",         "category": "study" },
+        { "start": "21:30", "end": "22:00", "title": "Relax (reading)",          "category": "relax" },
+        { "start": "22:00", "end": "22:15", "title": "Evening meds & hygiene",   "category": "health" },
+        { "start": "22:15", "end": "23:00", "title": "Wind‑down",                "category": "relax" },
+        { "start": "23:00", "end": "06:45", "title": "Sleep",                    "category": "sleep" }
+      ]
+    },
+
+    {
+      "day": "Tuesday",
+      "date": "2025-08-05",
+      "blocks": [
+        { "start": "06:45", "end": "07:00", "title": "Wake‑up & hygiene",        "category": "self-care" },
+        { "start": "07:00", "end": "07:30", "title": "Morning meditation",       "category": "wellbeing" },
+        { "start": "07:30", "end": "08:15", "title": "Breakfast + journaling",  "category": "meal" },
+        { "start": "08:15", "end": "08:30", "title": "Supplements & meds",       "category": "health" },
+        { "start": "08:30", "end": "12:30", "title": "Deep work (coding)",       "category": "work" },
+        { "start": "12:30", "end": "13:15", "title": "Lunch",                   "category": "meal" },
+        { "start": "13:15", "end": "14:00", "title": "Midday walk",             "category": "exercise" },
+        { "start": "14:00", "end": "18:00", "title": "Collab work / meetings",  "category": "work" },
+        { "start": "18:15", "end": "18:35", "title": "Treadmill walk (20 min)", "category": "exercise" },
+        { "start": "18:35", "end": "19:15", "title": "Shower & scalp care",      "category": "self-care" },
+        { "start": "19:15", "end": "20:00", "title": "Dinner",                  "category": "meal" },
+        { "start": "20:00", "end": "21:30", "title": "Community / social",      "category": "social" },
+        { "start": "21:30", "end": "22:00", "title": "Relax (music)",           "category": "relax" },
+        { "start": "22:00", "end": "22:15", "title": "Evening meds & hygiene",  "category": "health" },
+        { "start": "22:15", "end": "23:00", "title": "Wind‑down",               "category": "relax" },
+        { "start": "23:00", "end": "06:45", "title": "Sleep",                   "category": "sleep" }
+      ]
+    },
+
+    {
+      "day": "Wednesday",
+      "date": "2025-08-06",
+      "blocks": [
+        { "start": "06:45", "end": "07:00", "title": "Wake‑up & hygiene",        "category": "self-care" },
+        { "start": "07:00", "end": "07:30", "title": "Morning meditation",       "category": "wellbeing" },
+        { "start": "07:30", "end": "08:15", "title": "Breakfast + journaling",  "category": "meal" },
+        { "start": "08:15", "end": "08:30", "title": "Supplements & meds",       "category": "health" },
+        { "start": "08:30", "end": "12:30", "title": "Deep work (architecture)","category": "work" },
+        { "start": "12:30", "end": "13:15", "title": "Lunch",                   "category": "meal" },
+        { "start": "13:15", "end": "14:00", "title": "Midday walk",             "category": "exercise" },
+        { "start": "14:00", "end": "18:00", "title": "Code reviews",            "category": "work" },
+        { "start": "18:15", "end": "19:05", "title": "Weights + treadmill",     "category": "exercise" },
+        { "start": "19:15", "end": "20:00", "title": "Dinner",                  "category": "meal" },
+        { "start": "20:00", "end": "21:30", "title": "Learning (papers)",       "category": "study" },
+        { "start": "21:30", "end": "22:00", "title": "Relax (podcast)",         "category": "relax" },
+        { "start": "22:00", "end": "22:15", "title": "Evening meds & hygiene",  "category": "health" },
+        { "start": "22:15", "end": "23:00", "title": "Wind‑down",               "category": "relax" },
+        { "start": "23:00", "end": "06:45", "title": "Sleep",                   "category": "sleep" }
+      ]
+    },
+
+    {
+      "day": "Thursday",
+      "date": "2025-08-07",
+      "blocks": [
+        { "start": "06:45", "end": "07:00", "title": "Wake‑up & hygiene",        "category": "self-care" },
+        { "start": "07:00", "end": "07:30", "title": "Morning meditation",       "category": "wellbeing" },
+        { "start": "07:30", "end": "08:15", "title": "Breakfast + journaling",  "category": "meal" },
+        { "start": "08:15", "end": "08:30", "title": "Supplements & meds",       "category": "health" },
+        { "start": "08:30", "end": "12:30", "title": "Feature dev",             "category": "work" },
+        { "start": "12:30", "end": "13:15", "title": "Lunch",                   "category": "meal" },
+        { "start": "13:15", "end": "14:00", "title": "Midday walk",             "category": "exercise" },
+        { "start": "14:00", "end": "18:00", "title": "Meetings / planning",     "category": "work" },
+        { "start": "18:15", "end": "18:35", "title": "Treadmill walk (20 min)", "category": "exercise" },
+        { "start": "18:35", "end": "19:15", "title": "Shower & scalp care",      "category": "self-care" },
+        { "start": "19:15", "end": "20:00", "title": "Dinner",                  "category": "meal" },
+        { "start": "20:00", "end": "21:30", "title": "Family time",             "category": "social" },
+        { "start": "21:30", "end": "22:00", "title": "Relax (TV)",              "category": "relax" },
+        { "start": "22:00", "end": "22:15", "title": "Evening meds & hygiene",  "category": "health" },
+        { "start": "22:15", "end": "23:00", "title": "Wind‑down",               "category": "relax" },
+        { "start": "23:00", "end": "06:45", "title": "Sleep",                   "category": "sleep" }
+      ]
+    },
+
+    {
+      "day": "Friday",
+      "date": "2025-08-08",
+      "blocks": [
+        { "start": "06:45", "end": "07:00", "title": "Wake‑up & hygiene",         "category": "self-care" },
+        { "start": "07:00", "end": "07:30", "title": "Morning meditation",        "category": "wellbeing" },
+        { "start": "07:30", "end": "08:15", "title": "Breakfast + journaling",   "category": "meal" },
+        { "start": "08:15", "end": "08:30", "title": "Supplements & meds",        "category": "health" },
+        { "start": "08:30", "end": "12:30", "title": "Deep work (wrap‑up)",       "category": "work" },
+        { "start": "12:30", "end": "13:15", "title": "Lunch",                    "category": "meal" },
+        { "start": "13:15", "end": "14:00", "title": "Midday walk",              "category": "exercise" },
+        { "start": "14:00", "end": "16:00", "title": "Emails & cleanup",         "category": "work" },
+        { "start": "16:00", "end": "18:00", "title": "House chores / Shabbat prep","category": "administrative" },
+        { "start": "18:15", "end": "19:05", "title": "Weights + treadmill",      "category": "exercise" },
+        { "start": "19:15", "end": "20:15", "title": "Shabbat dinner",           "category": "meal" },
+        { "start": "20:15", "end": "22:00", "title": "Family / friends",         "category": "social" },
+        { "start": "22:00", "end": "22:15", "title": "Evening meds & hygiene",   "category": "health" },
+        { "start": "22:15", "end": "23:45", "title": "Relax (reading)",          "category": "relax" },
+        { "start": "23:45", "end": "07:30", "title": "Sleep",                    "category": "sleep" }
+      ]
+    },
+
+    {
+      "day": "Saturday",
+      "date": "2025-08-09",
+      "blocks": [
+        { "start": "07:30", "end": "08:00", "title": "Wake‑up & hygiene",         "category": "self-care" },
+        { "start": "08:00", "end": "09:00", "title": "Leisure breakfast",         "category": "meal" },
+        { "start": "09:00", "end": "11:00", "title": "Study / synagogue",         "category": "spiritual" },
+        { "start": "11:00", "end": "13:00", "title": "Park walk",                 "category": "exercise" },
+        { "start": "13:00", "end": "14:30", "title": "Lunch",                     "category": "meal" },
+        { "start": "14:30", "end": "17:00", "title": "Rest / reading",            "category": "relax" },
+        { "start": "17:00", "end": "18:00", "title": "Family board game",         "category": "social" },
+        { "start": "18:00", "end": "19:00", "title": "Stretch / light walk",      "category": "exercise" },
+        { "start": "19:00", "end": "20:00", "title": "Dinner leftovers",          "category": "meal" },
+        { "start": "20:00", "end": "22:00", "title": "Reflection / planning",     "category": "wellbeing" },
+        { "start": "22:00", "end": "22:15", "title": "Evening meds & hygiene",    "category": "health" },
+        { "start": "22:15", "end": "23:30", "title": "Wind‑down (music)",         "category": "relax" },
+        { "start": "23:30", "end": "06:45", "title": "Sleep",                     "category": "sleep" }
+      ]
+    },
+
+    {
+      "day": "Sunday",
+      "date": "2025-08-10",
+      "blocks": [
+        { "start": "06:45", "end": "07:00", "title": "Wake‑up & hygiene",        "category": "self-care" },
+        { "start": "07:00", "end": "07:30", "title": "Morning meditation",       "category": "wellbeing" },
+        { "start": "07:30", "end": "08:15", "title": "Breakfast + journaling",  "category": "meal" },
+        { "start": "08:15", "end": "08:30", "title": "Supplements & meds",       "category": "health" },
+        { "start": "08:30", "end": "12:30", "title": "Planning & strategy",      "category": "work" },
+        { "start": "12:30", "end": "13:15", "title": "Lunch",                   "category": "meal" },
+        { "start": "13:15", "end": "14:00", "title": "Midday walk",             "category": "exercise" },
+        { "start": "14:00", "end": "18:00", "title": "Project work",            "category": "work" },
+        { "start": "18:15", "end": "18:35", "title": "Treadmill walk (20 min)", "category": "exercise" },
+        { "start": "18:35", "end": "19:15", "title": "Shower & scalp care",      "category": "self-care" },
+        { "start": "19:15", "end": "20:00", "title": "Dinner",                  "category": "meal" },
+        { "start": "20:00", "end": "21:30", "title": "Prepare week ahead",      "category": "administrative" },
+        { "start": "21:30", "end": "22:00", "title": "Relax (TV)",              "category": "relax" },
+        { "start": "22:00", "end": "22:15", "title": "Evening meds & hygiene",  "category": "health" },
+        { "start": "22:15", "end": "23:00", "title": "Wind‑down",               "category": "relax" },
+        { "start": "23:00", "end": "06:45", "title": "Sleep",                   "category": "sleep" }
+      ]
+    }
+  ]
+}

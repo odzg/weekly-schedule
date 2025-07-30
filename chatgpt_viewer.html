@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Weekly Schedule</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; }
+    h1  { margin-top: 0; }
+    h2  { margin-bottom: .25rem; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 1.5rem; }
+    td { padding: .25rem .5rem; border-bottom: 1px solid #ddd; }
+    td:first-child { white-space: nowrap; font-weight: 600; }
+    section { page-break-inside: avoid; }
+    @media (prefers-color-scheme: dark) {
+      body { background:#111;color:#eee; }
+      td { border-color:#444; }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Week</h1>
+  <div id="schedule">Loading…</div>
+
+  <script>
+  /*======================================================
+    Replace the placeholders below with your repo details
+  ======================================================*/
+  const OWNER = 'odzg';
+  const REPO  = 'weekly-schedule';
+  const PATH  = 'chatgpt_schedule.json';
+  /*=====================================================*/
+
+  /**
+   * @typedef {Object} Block
+   * @property {string} start
+   * @property {string} end
+   * @property {string} title
+   * @property {string} [category]
+   * @property {string} [notes]
+   */
+
+  /**
+   * @typedef {Object} Day
+   * @property {string} day
+   * @property {string} date
+   * @property {Block[]} blocks
+   */
+
+  /**
+   * Fetch the raw JSON file from GitHub.
+   * Stores a read‑only PAT in localStorage so the file never contains secrets.
+   */
+  async function fetchSchedule() {
+    const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`;
+    let token = localStorage.getItem('gh_pat');
+    if (!token) {
+      token = prompt('GitHub read‑only PAT (contents scope):');
+      if (!token) throw new Error('No token provided.');
+      localStorage.setItem('gh_pat', token);
+    }
+    const res = await fetch(url, {
+      headers: {
+        'Accept': 'application/vnd.github.v3.raw',
+        'Authorization': `token ${token}`
+      }
+    });
+    if (!res.ok) throw new Error(`GitHub API error ${res.status}`);
+    return /** @type {{meta:Object,week:Day[]}} */ (await res.json());
+  }
+
+  /** Render the schedule into simple HTML tables. */
+  function render(data) {
+    const root = document.getElementById('schedule');
+    root.innerHTML = '';
+    data.week.forEach(day => {
+      const sec = document.createElement('section');
+      sec.innerHTML = `<h2>${day.day} (${day.date})</h2>`;
+      const table = document.createElement('table');
+      day.blocks.forEach(b => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${b.start}–${b.end}</td><td>${b.title}</td>`;
+        table.appendChild(tr);
+      });
+      sec.appendChild(table);
+      root.appendChild(sec);
+    });
+  }
+
+  fetchSchedule().then(render).catch(err => {
+    document.getElementById('schedule').textContent =
+      'Failed to load schedule: ' + err.message;
+  });
+  </script>
+</body>
+</html>
