@@ -1,0 +1,1012 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-07-30",
+    "timezone": "UTC",
+    "weekStartsOn": "monday"
+  },
+  "settings": {
+    "defaultBlockDuration": 60,
+    "workingHours": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "breakReminders": true,
+    "categories": {
+      "work": {
+        "color": "#3B82F6",
+        "icon": "💼"
+      },
+      "personal": {
+        "color": "#10B981",
+        "icon": "🏠"
+      },
+      "health": {
+        "color": "#F59E0B",
+        "icon": "💪"
+      },
+      "learning": {
+        "color": "#8B5CF6",
+        "icon": "📚"
+      },
+      "social": {
+        "color": "#EF4444",
+        "icon": "👥"
+      },
+      "maintenance": {
+        "color": "#6B7280",
+        "icon": "🔧"
+      },
+      "break": {
+        "color": "#14B8A6",
+        "icon": "☕"
+      }
+    }
+  },
+  "weeklySchedule": {
+    "monday": [
+      {
+        "id": "mon_001",
+        "startTime": "07:00",
+        "endTime": "08:00",
+        "title": "Morning Routine",
+        "description": "Wake up, hygiene, light stretching",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "mon_002",
+        "startTime": "08:00",
+        "endTime": "09:00",
+        "title": "Breakfast & Planning",
+        "description": "Healthy breakfast, review daily goals",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "mon_003",
+        "startTime": "09:00",
+        "endTime": "12:00",
+        "title": "Deep Work Block 1",
+        "description": "Most important tasks, no interruptions",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "mon_004",
+        "startTime": "12:00",
+        "endTime": "13:00",
+        "title": "Lunch Break",
+        "description": "Proper meal, short walk if possible",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "mon_005",
+        "startTime": "13:00",
+        "endTime": "15:30",
+        "title": "Collaborative Work",
+        "description": "Meetings, emails, team coordination",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "mon_006",
+        "startTime": "15:30",
+        "endTime": "15:45",
+        "title": "Afternoon Break",
+        "description": "Coffee, stretch, brief mental reset",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "mon_007",
+        "startTime": "15:45",
+        "endTime": "17:00",
+        "title": "Administrative Tasks",
+        "description": "Planning, organizing, follow-ups",
+        "category": "work",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "mon_008",
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "title": "Exercise",
+        "description": "Workout, gym, or physical activity",
+        "category": "health",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "mon_009",
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "title": "Dinner Preparation",
+        "description": "Cook, eat dinner mindfully",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "mon_010",
+        "startTime": "19:00",
+        "endTime": "20:30",
+        "title": "Learning Time",
+        "description": "Skills development, reading, courses",
+        "category": "learning",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "mon_011",
+        "startTime": "20:30",
+        "endTime": "22:00",
+        "title": "Personal Time",
+        "description": "Hobbies, relaxation, entertainment",
+        "category": "personal",
+        "priority": "low",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "mon_012",
+        "startTime": "22:00",
+        "endTime": "23:00",
+        "title": "Wind Down",
+        "description": "Prepare for bed, reflection, light reading",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      }
+    ],
+    "tuesday": [
+      {
+        "id": "tue_001",
+        "startTime": "07:00",
+        "endTime": "08:00",
+        "title": "Morning Routine",
+        "description": "Wake up, hygiene, light stretching",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "tue_002",
+        "startTime": "08:00",
+        "endTime": "09:00",
+        "title": "Breakfast & Planning",
+        "description": "Healthy breakfast, review daily goals",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "tue_003",
+        "startTime": "09:00",
+        "endTime": "12:00",
+        "title": "Creative Work Block",
+        "description": "Design, brainstorming, innovative tasks",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "tue_004",
+        "startTime": "12:00",
+        "endTime": "13:00",
+        "title": "Lunch Break",
+        "description": "Proper meal, short walk if possible",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "tue_005",
+        "startTime": "13:00",
+        "endTime": "15:30",
+        "title": "Project Management",
+        "description": "Review progress, adjust plans, coordinate",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "tue_006",
+        "startTime": "15:30",
+        "endTime": "15:45",
+        "title": "Afternoon Break",
+        "description": "Coffee, stretch, brief mental reset",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "tue_007",
+        "startTime": "15:45",
+        "endTime": "17:00",
+        "title": "Communication",
+        "description": "Emails, calls, client interactions",
+        "category": "work",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "tue_008",
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "title": "Exercise",
+        "description": "Cardio, strength training, or sports",
+        "category": "health",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "tue_009",
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "title": "Dinner & Social",
+        "description": "Dinner with family/friends or calls",
+        "category": "social",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "tue_010",
+        "startTime": "19:00",
+        "endTime": "20:30",
+        "title": "Skill Building",
+        "description": "Practice, tutorials, hands-on learning",
+        "category": "learning",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "tue_011",
+        "startTime": "20:30",
+        "endTime": "22:00",
+        "title": "Personal Projects",
+        "description": "Side projects, creative pursuits",
+        "category": "personal",
+        "priority": "low",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "tue_012",
+        "startTime": "22:00",
+        "endTime": "23:00",
+        "title": "Wind Down",
+        "description": "Prepare for bed, reflection, light reading",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      }
+    ],
+    "wednesday": [
+      {
+        "id": "wed_001",
+        "startTime": "07:00",
+        "endTime": "08:00",
+        "title": "Morning Routine",
+        "description": "Wake up, hygiene, light stretching",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "wed_002",
+        "startTime": "08:00",
+        "endTime": "09:00",
+        "title": "Breakfast & Planning",
+        "description": "Healthy breakfast, review daily goals",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "wed_003",
+        "startTime": "09:00",
+        "endTime": "12:00",
+        "title": "Deep Work Block 2",
+        "description": "Complex problem-solving, analysis",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "wed_004",
+        "startTime": "12:00",
+        "endTime": "13:00",
+        "title": "Lunch Break",
+        "description": "Proper meal, short walk if possible",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "wed_005",
+        "startTime": "13:00",
+        "endTime": "14:00",
+        "title": "Mid-week Review",
+        "description": "Assess progress, adjust goals for rest of week",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "wed_006",
+        "startTime": "14:00",
+        "endTime": "15:30",
+        "title": "Maintenance Tasks",
+        "description": "System updates, file organization, cleanup",
+        "category": "maintenance",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "wed_007",
+        "startTime": "15:30",
+        "endTime": "15:45",
+        "title": "Afternoon Break",
+        "description": "Coffee, stretch, brief mental reset",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "wed_008",
+        "startTime": "15:45",
+        "endTime": "17:00",
+        "title": "Learning & Development",
+        "description": "Professional development, training",
+        "category": "learning",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "wed_009",
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "title": "Exercise",
+        "description": "Yoga, flexibility, or recovery workout",
+        "category": "health",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "wed_010",
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "title": "Dinner Preparation",
+        "description": "Cook, eat dinner mindfully",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "wed_011",
+        "startTime": "19:00",
+        "endTime": "21:00",
+        "title": "Social Time",
+        "description": "Connect with friends, family, or community",
+        "category": "social",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "wed_012",
+        "startTime": "21:00",
+        "endTime": "22:00",
+        "title": "Personal Reflection",
+        "description": "Journal, meditation, planning",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "wed_013",
+        "startTime": "22:00",
+        "endTime": "23:00",
+        "title": "Wind Down",
+        "description": "Prepare for bed, reflection, light reading",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      }
+    ],
+    "thursday": [
+      {
+        "id": "thu_001",
+        "startTime": "07:00",
+        "endTime": "08:00",
+        "title": "Morning Routine",
+        "description": "Wake up, hygiene, light stretching",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "thu_002",
+        "startTime": "08:00",
+        "endTime": "09:00",
+        "title": "Breakfast & Planning",
+        "description": "Healthy breakfast, review daily goals",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "thu_003",
+        "startTime": "09:00",
+        "endTime": "12:00",
+        "title": "Implementation Work",
+        "description": "Execute plans, build, create deliverables",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "thu_004",
+        "startTime": "12:00",
+        "endTime": "13:00",
+        "title": "Lunch Break",
+        "description": "Proper meal, short walk if possible",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "thu_005",
+        "startTime": "13:00",
+        "endTime": "15:30",
+        "title": "Quality Review",
+        "description": "Test, review, refine work output",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "thu_006",
+        "startTime": "15:30",
+        "endTime": "15:45",
+        "title": "Afternoon Break",
+        "description": "Coffee, stretch, brief mental reset",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "thu_007",
+        "startTime": "15:45",
+        "endTime": "17:00",
+        "title": "Documentation",
+        "description": "Document processes, create notes, organize",
+        "category": "work",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "thu_008",
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "title": "Exercise",
+        "description": "High-intensity workout or sports",
+        "category": "health",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "thu_009",
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "title": "Dinner Preparation",
+        "description": "Cook, eat dinner mindfully",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "thu_010",
+        "startTime": "19:00",
+        "endTime": "20:30",
+        "title": "Research Time",
+        "description": "Explore new ideas, read industry content",
+        "category": "learning",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "thu_011",
+        "startTime": "20:30",
+        "endTime": "22:00",
+        "title": "Entertainment",
+        "description": "Movies, games, music, relaxation",
+        "category": "personal",
+        "priority": "low",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "thu_012",
+        "startTime": "22:00",
+        "endTime": "23:00",
+        "title": "Wind Down",
+        "description": "Prepare for bed, reflection, light reading",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      }
+    ],
+    "friday": [
+      {
+        "id": "fri_001",
+        "startTime": "07:00",
+        "endTime": "08:00",
+        "title": "Morning Routine",
+        "description": "Wake up, hygiene, light stretching",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "fri_002",
+        "startTime": "08:00",
+        "endTime": "09:00",
+        "title": "Breakfast & Planning",
+        "description": "Healthy breakfast, review daily goals",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "fri_003",
+        "startTime": "09:00",
+        "endTime": "11:30",
+        "title": "Week Completion",
+        "description": "Finish weekly deliverables, wrap up tasks",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "fri_004",
+        "startTime": "11:30",
+        "endTime": "12:30",
+        "title": "Weekly Review",
+        "description": "Assess accomplishments, plan next week",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "fri_005",
+        "startTime": "12:30",
+        "endTime": "13:30",
+        "title": "Extended Lunch",
+        "description": "Longer break to celebrate week completion",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "fri_006",
+        "startTime": "13:30",
+        "endTime": "15:00",
+        "title": "Preparation Work",
+        "description": "Set up for next week, organize workspace",
+        "category": "work",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "fri_007",
+        "startTime": "15:00",
+        "endTime": "15:15",
+        "title": "Afternoon Break",
+        "description": "Coffee, stretch, brief mental reset",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "fri_008",
+        "startTime": "15:15",
+        "endTime": "16:30",
+        "title": "Learning Exploration",
+        "description": "Explore new tools, techniques, ideas",
+        "category": "learning",
+        "priority": "low",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "fri_009",
+        "startTime": "16:30",
+        "endTime": "17:00",
+        "title": "Week Closure",
+        "description": "Final cleanup, prepare for weekend",
+        "category": "work",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "fri_010",
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "title": "Exercise",
+        "description": "Fun physical activity, celebrate week",
+        "category": "health",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "fri_011",
+        "startTime": "18:00",
+        "endTime": "19:30",
+        "title": "Social Dinner",
+        "description": "Dinner out or with others, social time",
+        "category": "social",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "fri_012",
+        "startTime": "19:30",
+        "endTime": "22:00",
+        "title": "Weekend Kickoff",
+        "description": "Fun activities, entertainment, socializing",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "fri_013",
+        "startTime": "22:00",
+        "endTime": "23:30",
+        "title": "Relaxed Wind Down",
+        "description": "Later bedtime for weekend transition",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      }
+    ],
+    "saturday": [
+      {
+        "id": "sat_001",
+        "startTime": "08:00",
+        "endTime": "09:30",
+        "title": "Relaxed Morning",
+        "description": "Sleep in, gentle wake-up routine",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_002",
+        "startTime": "09:30",
+        "endTime": "10:30",
+        "title": "Weekend Breakfast",
+        "description": "Special breakfast, coffee, newspaper/news",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_003",
+        "startTime": "10:30",
+        "endTime": "12:00",
+        "title": "Household Management",
+        "description": "Cleaning, laundry, household tasks",
+        "category": "maintenance",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_004",
+        "startTime": "12:00",
+        "endTime": "13:00",
+        "title": "Lunch Break",
+        "description": "Light lunch, plan afternoon activities",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_005",
+        "startTime": "13:00",
+        "endTime": "15:00",
+        "title": "Outdoor Activity",
+        "description": "Nature walk, outdoor exercise, fresh air",
+        "category": "health",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_006",
+        "startTime": "15:00",
+        "endTime": "17:00",
+        "title": "Personal Projects",
+        "description": "Hobbies, creative work, passion projects",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_007",
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "title": "Social Connections",
+        "description": "Call family/friends, social media, community",
+        "category": "social",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_008",
+        "startTime": "18:00",
+        "endTime": "19:30",
+        "title": "Dinner & Prep",
+        "description": "Cook special meal, meal prep for week",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_009",
+        "startTime": "19:30",
+        "endTime": "22:00",
+        "title": "Entertainment Time",
+        "description": "Movies, books, games, fun activities",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sat_010",
+        "startTime": "22:00",
+        "endTime": "23:30",
+        "title": "Weekend Wind Down",
+        "description": "Relaxed evening routine, prepare for Sunday",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      }
+    ],
+    "sunday": [
+      {
+        "id": "sun_001",
+        "startTime": "08:30",
+        "endTime": "10:00",
+        "title": "Peaceful Morning",
+        "description": "Slow wake-up, meditation, quiet time",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_002",
+        "startTime": "10:00",
+        "endTime": "11:00",
+        "title": "Sunday Breakfast",
+        "description": "Special breakfast, planning the day",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_003",
+        "startTime": "11:00",
+        "endTime": "12:30",
+        "title": "Weekly Planning",
+        "description": "Plan upcoming week, set goals, organize",
+        "category": "work",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "sun_004",
+        "startTime": "12:30",
+        "endTime": "13:30",
+        "title": "Lunch Break",
+        "description": "Healthy lunch, brief rest",
+        "category": "break",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_005",
+        "startTime": "13:30",
+        "endTime": "15:00",
+        "title": "Learning & Growth",
+        "description": "Read, study, personal development",
+        "category": "learning",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_006",
+        "startTime": "15:00",
+        "endTime": "16:00",
+        "title": "Physical Activity",
+        "description": "Gentle exercise, yoga, or sports",
+        "category": "health",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_007",
+        "startTime": "16:00",
+        "endTime": "17:30",
+        "title": "Life Administration",
+        "description": "Bills, scheduling, life management tasks",
+        "category": "maintenance",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_008",
+        "startTime": "17:30",
+        "endTime": "19:00",
+        "title": "Social & Family Time",
+        "description": "Connect with loved ones, community events",
+        "category": "social",
+        "priority": "high",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_009",
+        "startTime": "19:00",
+        "endTime": "20:00",
+        "title": "Sunday Dinner",
+        "description": "Special dinner, family meal",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_010",
+        "startTime": "20:00",
+        "endTime": "21:30",
+        "title": "Week Preparation",
+        "description": "Prepare clothes, bag, workspace for Monday",
+        "category": "maintenance",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      },
+      {
+        "id": "sun_011",
+        "startTime": "21:30",
+        "endTime": "22:30",
+        "title": "Reflection & Rest",
+        "description": "Journal, reflect on week, peaceful activities",
+        "category": "personal",
+        "priority": "medium",
+        "recurring": true,
+        "flexible": true
+      },
+      {
+        "id": "sun_012",
+        "startTime": "22:30",
+        "endTime": "23:00",
+        "title": "Early Wind Down",
+        "description": "Early bedtime preparation for productive week",
+        "category": "personal",
+        "priority": "high",
+        "recurring": true,
+        "flexible": false
+      }
+    ]
+  },
+  "templates": {
+    "workBlock": {
+      "category": "work",
+      "priority": "high",
+      "recurring": true,
+      "flexible": false
+    },
+    "breakBlock": {
+      "category": "break",
+      "priority": "medium",
+      "recurring": true,
+      "flexible": true
+    },
+    "personalBlock": {
+      "category": "personal",
+      "priority": "medium",
+      "recurring": true,
+      "flexible": true
+    }
+  },
+  "notes": {
+    "flexibilityGuidelines": "Flexible blocks can be moved ±30 minutes if needed. Non-flexible blocks should remain fixed.",
+    "prioritySystem": "High = must do, Medium = should do, Low = nice to do",
+    "weeklyReview": "Every Friday at 11:30 AM - assess what worked and what needs adjustment",
+    "customization": "Adjust times, activities, and priorities based on personal needs and circumstances"
+  }
+}
