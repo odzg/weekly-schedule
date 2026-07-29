@@ -1,0 +1,32 @@
+name: Nx TypeScript Verification
+
+on:
+  push:
+    branches:
+      - chatgpt/nx-typescript-verification-20260729
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Execute real Nx workflow
+        run: bash .github/verify-nx.sh
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nx-typescript-verification-results
+          path: |
+            nx-verification/.github-output
+            nx-verification/tsconfig.root.json
+            nx-verification/tsconfig.json
+          if-no-files-found: warn
