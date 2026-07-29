@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - chatgpt/nx-typescript-verification-20260729
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
