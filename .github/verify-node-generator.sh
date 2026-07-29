@@ -40,8 +40,6 @@ cat > tsconfig.base.json <<'JSON'
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
     "strict": true,
     "composite": true,
     "declaration": true,
