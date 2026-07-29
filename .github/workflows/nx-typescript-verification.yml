@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 jobs:
-  verify:
+  verify-existing:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -21,13 +21,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Execute real Nx workflow
+      - name: Execute existing real Nx workflow
         run: |
           python .github/patch-verify-nx.py
           bash .github/verify-nx.sh
-      - name: Generate and verify an official Nx Node application
-        run: bash .github/verify-node-generator.sh
-      - name: Upload verification evidence
+      - name: Upload existing verification evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -36,6 +34,24 @@ jobs:
             nx-verification/.github-output
             nx-verification/tsconfig.root.json
             nx-verification/tsconfig.json
+          if-no-files-found: warn
+
+  verify-generated-node-app:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generate and verify an official Nx Node application
+        run: bash .github/verify-node-generator.sh
+      - name: Upload generated Node app evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nx-node-generator-verification-results
+          path: |
             nx-node-generator-verification/.github-output
             nx-node-generator-verification/apps/generated-node-app/tsconfig*.json
             nx-node-generator-verification/apps/generated-node-app/project.json
