@@ -11,6 +11,10 @@ text = text.replace(
     '"baseUrl": ".",\n    "ignoreDeprecations": "6.0",\n    "paths":',
 )
 text = text.replace("'^production'", "'^default'")
+text = text.replace(
+    "echo '=== incompatible Nx-style flag control ==='\n  set +e",
+    "echo '=== incompatible Nx-style flag control ==='\n  rm -f .nx/typecheck/next-app.tsbuildinfo\n  set +e",
+)
 old = """  const files = (rootNode.data.files || [])
     .map((x) => x.file.replaceAll('\\\\', '/'))
     .filter((x) => EXT.test(x))
