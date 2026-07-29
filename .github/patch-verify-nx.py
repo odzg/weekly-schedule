@@ -15,6 +15,10 @@ text = text.replace(
     "echo '=== incompatible Nx-style flag control ==='\n  set +e",
     "echo '=== incompatible Nx-style flag control ==='\n  rm -f .nx/typecheck/next-app.tsbuildinfo\n  set +e",
 )
+text = text.replace(
+    "cat .github-output/incompatible-control.log\n  test \"$ec\" -ne 0",
+    "cat .github-output/incompatible-control.log\n  echo \"incompatible_control_exit=$ec\"\n  test \"$ec\" -eq 0\n  test -f .nx/typecheck/next-app.tsbuildinfo\n  test ! -f apps/next-app/src/page.d.ts",
+)
 old = """  const files = (rootNode.data.files || [])
     .map((x) => x.file.replaceAll('\\\\', '/'))
     .filter((x) => EXT.test(x))
