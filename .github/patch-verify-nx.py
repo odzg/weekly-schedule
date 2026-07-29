@@ -10,6 +10,7 @@ text = text.replace(
     '"baseUrl": ".",\n    "paths":',
     '"baseUrl": ".",\n    "ignoreDeprecations": "6.0",\n    "paths":',
 )
+text = text.replace("'^production'", "'^default'")
 old = """  const files = (rootNode.data.files || [])
     .map((x) => x.file.replaceAll('\\\\', '/'))
     .filter((x) => EXT.test(x))
