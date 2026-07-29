@@ -12,6 +12,10 @@ text = text.replace(
 )
 text = text.replace("'^production'", "'^default'")
 text = text.replace(
+    "node_modules/\ndist/\n.nx/",
+    "node_modules/\ndist/\n.nx/\n.github-output/",
+)
+text = text.replace(
     "echo '=== incompatible Nx-style flag control ==='\n  set +e",
     "echo '=== incompatible Nx-style flag control ==='\n  rm -f .nx/typecheck/next-app.tsbuildinfo\n  set +e",
 )
