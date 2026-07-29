@@ -6,6 +6,10 @@ text = text.replace(
     "const { createProjectGraphAsync, parseJson } = require('@nx/devkit');",
     "const { createProjectGraphAsync, parseJson, visitNotIgnoredFiles } = require('@nx/devkit');",
 )
+text = text.replace(
+    '"baseUrl": ".",\n    "paths":',
+    '"baseUrl": ".",\n    "ignoreDeprecations": "6.0",\n    "paths":',
+)
 old = """  const files = (rootNode.data.files || [])
     .map((x) => x.file.replaceAll('\\\\', '/'))
     .filter((x) => EXT.test(x))
