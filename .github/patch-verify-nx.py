@@ -25,4 +25,9 @@ new = """  const nestedRoots = Object.values(graph.nodes)
   files.sort();"""
 if old not in text:
     raise SystemExit('Expected generator block not found')
-path.write_text(text.replace(old, new))
+text = text.replace(old, new)
+text = text.replace(
+    "if (!t.command.includes('--build tsconfig.json --emitDeclarationOnly')) {\n  throw new Error(`Unexpected built-in leaf command: ${t.command}`);\n}",
+    "const command = t.options?.command ?? t.command;\nif (!command.includes('--build tsconfig.json --emitDeclarationOnly')) {\n  throw new Error(`Unexpected built-in leaf command: ${command}`);\n}",
+)
+path.write_text(text)
