@@ -25,6 +25,8 @@ jobs:
         run: |
           python .github/patch-verify-nx.py
           bash .github/verify-nx.sh
+      - name: Generate and verify an official Nx Node application
+        run: bash .github/verify-node-generator.sh
       - name: Upload verification evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -34,4 +36,8 @@ jobs:
             nx-verification/.github-output
             nx-verification/tsconfig.root.json
             nx-verification/tsconfig.json
+            nx-node-generator-verification/.github-output
+            nx-node-generator-verification/apps/generated-node-app/tsconfig*.json
+            nx-node-generator-verification/apps/generated-node-app/project.json
+            nx-node-generator-verification/apps/generated-node-app/package.json
           if-no-files-found: warn
